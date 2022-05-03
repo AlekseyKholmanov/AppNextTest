@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="102dp"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kcalIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:tint="@color/colorLight"
+            android:src="@drawable/shape_oval" />
+
+        <TextView
+            android:id="@+id/KcalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/colorTextMedium"
+            tools:text="9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:minWidth="24dp"
+            android:textSize="12sp"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/colorLight"
+            android:textAllCaps="true"
+            android:text=" kcal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/distanceIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:tint="@color/colorLight"
+            android:src="@drawable/shape_oval" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/colorTextMedium"
+            tools:text="9" />
+
+        <TextView
+            android:id="@+id/distanceMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:textSize="12sp"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/colorLight"
+            android:textAllCaps="true"
+            android:text=" KM" />
+    </LinearLayout>
+
+</merge>

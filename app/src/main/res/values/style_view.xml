@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="Widget.AppNext.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipIconEnabled">false</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/colorPrimaryBlue</item>
+        <item name="chipSpacingHorizontal">12dp</item>
+        <item name="chipSpacingVertical">0dp</item>
+        <item name="chipStrokeColor">@color/colorPrimaryBlue</item>
+    </style>
+
+
+</resources>

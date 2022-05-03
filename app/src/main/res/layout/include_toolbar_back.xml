@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginVertical="10dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    android:backgroundTint="@color/white"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
+    tools:title="Title">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:tint="@color/colorTextPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="28dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "Toolbar"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

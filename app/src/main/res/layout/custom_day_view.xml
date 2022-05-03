@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/dayNumber"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:lineSpacingExtra="8sp"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/colorTextPrimary"
+        tools:text="9" />
+
+    <TextView
+        android:id="@+id/dayText"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:minWidth="24dp"
+        android:layout_marginStart="3dp"
+        android:textSize="12sp"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/colorLight"
+        tools:text="Mon" />
+
+</merge>

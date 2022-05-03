@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/hint_daily_activity"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/dailyGoalHead"
+        style="@style/Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/hint_daily_goal"
+        app:layout_constraintStart_toStartOf="@id/leftGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarTitle" />
+
+    <TextView
+        android:id="@+id/dailyGoalSubtitle"
+        style="@style/Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_daily_goal_subtitle"
+        app:layout_constraintStart_toStartOf="@id/leftGuidline"
+        app:layout_constraintTop_toBottomOf="@id/dailyGoalHead" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:dividerColor="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dailyGoalSubtitle" />
+
+
+    <TextView
+        android:id="@+id/weaklyProgressHead"
+        style="@style/Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/hint_weakly_progress"
+        app:layout_constraintStart_toStartOf="@id/leftGuidline"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/weaklyProgressSubtitle"
+        style="@style/Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_weakly_progress_subtitle"
+        app:layout_constraintStart_toStartOf="@id/leftGuidline"
+        app:layout_constraintTop_toBottomOf="@id/weaklyProgressHead" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hint_timeline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuidline"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/graphGoalHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/hint_daily_goal"
+        android:textColor="@color/colorTextSecondary"
+        app:layout_constraintRight_toRightOf="@id/rightGuidline"
+        app:layout_constraintTop_toBottomOf="@id/timeline" />
+
+    <ImageView
+        android:id="@+id/graphGoalColor"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/shape_oval"
+        app:layout_constraintBottom_toBottomOf="@id/graphGoalHint"
+        app:layout_constraintEnd_toStartOf="@id/graphGoalHint"
+        app:layout_constraintTop_toTopOf="@id/graphGoalHint"
+        app:tint="@color/colorPrimaryGreen" />
+
+    <TextView
+        android:id="@+id/graphActivityHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/hint_activity"
+        android:textColor="@color/colorTextSecondary"
+        app:layout_constraintEnd_toStartOf="@id/graphGoalColor"
+        app:layout_constraintTop_toBottomOf="@id/timeline" />
+
+    <ImageView
+        android:id="@+id/graphActivityColor"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/shape_oval"
+        app:layout_constraintBottom_toBottomOf="@id/graphActivityHint"
+        app:layout_constraintEnd_toStartOf="@id/graphActivityHint"
+        app:layout_constraintTop_toTopOf="@id/graphActivityHint"
+        app:tint="@color/colorPrimaryBlue" />
+    <com.example.appnext.ui.custom.CustomGraph
+        android:id="@+id/activityGraph"
+        app:layout_constraintTop_toBottomOf="@id/graphActivityColor"
+        app:layout_constraintStart_toStartOf="@id/leftGuidline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuidline"
+        android:layout_width="0dp"
+        android:layout_height="312dp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/activityGraph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="@color/colorDivider"
+        android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

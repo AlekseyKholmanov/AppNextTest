@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "pink_300">#f06292</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#9fa8da</color>
+    <color name="primary_light">#d1d9ff</color>
+    <color name="primary_dark">#6f79a8</color>
+    <color name="accent">#81d4fa</color>
+
+    <color name="colorPrimaryBlue">#0284FD</color>
+    <color name="colorPrimaryBlueVariant">#D3EAFF</color>
+    <color name="colorPrimaryGreen">#00B93F</color>
+    <color name="colorToolbarColor">#333333</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextSecondary">#6A6A6A</color>
+    <color name="colorTextMedium">#666666</color>
+    <color name="colorLight">#999999</color>
+    <color name="colorDivider">#F2F2F2</color>
+    <color name="colorBorder">#EFEFEF</color>
+
+
+</resources>

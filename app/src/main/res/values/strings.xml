@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppNextTest</string>
+
+    <string name="hint_daily_goal">Daily Goal</string>
+    <string name="hint_daily_goal_subtitle">Be active. Be healthy. Set goals.</string>
+    <string name="hint_weakly_progress">Weekly Progress</string>
+    <string name="hint_weakly_progress_subtitle">Set realistic goals</string>
+    <string name="hint_timeline">Timeline</string>
+    <string name="hint_daily_activity">Daily Activity</string>
+    <string name="hint_steps">Steps:</string>
+    <string name="hint_activity">Activity</string>
+</resources>
