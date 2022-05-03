@@ -8,6 +8,7 @@ import com.example.appnext.models.ui.Item
 import com.example.appnext.models.ui.MonthItem
 import com.example.appnext.useCases.WeeklyActivityInfoUseCase
 import kotlinx.coroutines.flow.*
+import org.joda.time.LocalDateTime
 
 class MainViewModel(
     private val weeklyActivityInfoUseCase: WeeklyActivityInfoUseCase
@@ -25,6 +26,7 @@ class MainViewModel(
                 val groupByMont = it.groupBy { it.month }
                 groupByMont.forEach { month, actions ->
                     list.add(MonthItem(month = getMonthName(month)))
+                    val today = LocalDateTime.now().dayOfMonth
                     actions.forEach {
                         val item = DailyInfoItem(
                             id = it.id,
@@ -34,6 +36,7 @@ class MainViewModel(
                             activity = it.activity,
                             meters = it.meters,
                             kCal = it.kCal,
+                            isTodayDay = it.dayOfMonth == today
                         )
                         list.add(item)
                     }

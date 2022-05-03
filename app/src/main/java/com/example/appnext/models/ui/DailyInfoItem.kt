@@ -10,7 +10,8 @@ data class DailyInfoItem(
     val goal: Int,
     val activity: Int,
     val meters: Int,
-    val kCal: Int
+    val kCal: Int,
+    val isTodayDay: Boolean
 ) : Item {
 
     override fun getViewType(): Int = R.layout.item_daily_result
